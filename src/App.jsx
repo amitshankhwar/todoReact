@@ -14,11 +14,14 @@ const App = () => {
     setTasks(tasks.filter((_, i) => i !== index));
   };
 
+  const onClearAll = () => {
+    setTasks([]);
+  };
   return (
     <div className="todo-container">
       <h1>To-Do List</h1>
       <AddTask onAdd={addTask} />
-      <TaskList tasks={tasks} onDelete={deleteTask} />
+      <TaskList tasks={tasks} onDelete={deleteTask} onClearAll={onClearAll} />
     </div>
   );
 };

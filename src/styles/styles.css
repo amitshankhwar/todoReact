@@ -69,3 +69,8 @@
 .task-delete-button:hover {
   background-color: #d32f2f;
 }
+.cleatbtn{
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
